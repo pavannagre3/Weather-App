@@ -8,9 +8,9 @@ const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const AdminUser = {
-    userid: "iharshkataria",
-    email: "extraedge@gmail.com",
-    password: "extraedge@123",
+    userid: "pavannagre3",
+    email: "pavannagre70@gmail.com",
+    password: "Pavan@123",
   };
 
   const dispatch = useDispatch();
