@@ -9,7 +9,7 @@ const LoginPage = () => {
   const [password, setPassword] = useState("");
   const AdminUser = {
    userid: "extraedge",
-    password: "fedev@extraedge",
+    password: "pavannagre3@gmail.com",
   };
 
   const dispatch = useDispatch();
