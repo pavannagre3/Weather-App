@@ -8,45 +8,37 @@ const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const AdminUser = {
-    userid: "pavannagre3",
-    email: "pavannagre70@gmail.com",
-    password: "Pavan@123",
+    userid: "extraedge",
+    password: "fedev@extraedge",
   };
 
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // if((userid===AdminUser.userid) && (email===AdminUser.email) && (password===AdminUser.password)){
-    dispatch(
-      login({
-        name: AdminUser.userid,
-        email: AdminUser.email,
-        password: AdminUser.password,
-        // loggedIn: true,
-      })
-    )
-  // }
-  // else{
-  //     alert("Invalid UserId, Email, password")
-  //   }
+    if ((userid === AdminUser.userid) && (password === AdminUser.password)) {
+      dispatch(
+        login({
+          name: AdminUser.userid,
+          password: AdminUser.password,
+          loggedIn: true,
+        })
+      )
+    }
+    else {
+      alert("Invalid UserId, Email, password")
+    }
     ;
   };
   return (
     <div className="container">
       <form className="login-form" onSubmit={(e) => handleSubmit(e)}>
-        <h1>Login Here</h1>
+        <h1>Input credentials</h1>
         <input
           type="name"
-          placeholder="Userid"
+          placeholder="User Id"
           value={userid}
           onChange={(e) => setUserid(e.target.value)}
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
         />
         <input
           type="password"
