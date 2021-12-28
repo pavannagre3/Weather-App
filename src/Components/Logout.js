@@ -16,9 +16,9 @@ const Logout = () => {
 
   return (
     <div className="logout">
-      <h1>
-        Welcome
-      </h1>
+      <h2>
+        Please select city name to get the current weather detail
+      </h2>
       <WeatherApp />
       <button className="logout_button" onClick={(e) => handleLogout(e)}>
         Logout
